@@ -410,6 +410,7 @@ int main(int argc, char **argv)
                       scan_in->points[i].z = 0.3;
                       scan_in->points[i].intensity = msg->intensities[i];
                   }
+                  
                   /*对sensor_msgs::pointcloud2的header的赋值操作要放到pcl::toROSMsg后面
                    *https://answers.ros.org/question/223487/empty-frame_id-when-converting-sensor_msgspointcloud2-to-sensor_msgsimage/
                    *It looks like the missing frame and timestamp is a separate issue.
