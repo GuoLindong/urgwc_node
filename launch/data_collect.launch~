@@ -1,0 +1,12 @@
+<!---->
+<launch>
+
+		<node pkg="urgwc_node" type="urgwc_node" name="horizontal" output="screen">
+			<param name="ip_address" value="192.168.0.15" />
+			<param name="ip_port" value="10940" />
+			<param name="frameID" value="laser" />
+			<param name="publish_multiecho" value="false" />
+			<!-- <remap from="/horizontal_laser/scan" to="horizontal_laser" /> -->
+		</node>
+
+</launch>

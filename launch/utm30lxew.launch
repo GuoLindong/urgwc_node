@@ -1,0 +1,19 @@
+<!---->
+<launch>
+
+		<node pkg="urgwc_node" type="urgwc_node" name="horizontal" output="screen">
+			<param name="ip_address" value="192.168.0.210" />
+			<param name="ip_port" value="10940" />
+			<param name="frameID" value="vehicle" />
+			<param name="publish_multiecho" value="false" />
+
+			<param name="x" type="double" value="0.0"/>
+            <param name="y" type="double" value="0.0"/>
+            <param name="z" type="double" value="0.3"/>
+            <param name="roll" type="double" value="0.0"/>
+            <param name="pitch" type="double" value="0.3"/>
+            <param name="yaw" type="double" value="0.3"/>
+			<!-- <remap from="/horizontal_laser/scan" to="horizontal_laser" /> -->
+		</node>
+
+</launch>
